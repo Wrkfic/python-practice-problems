@@ -1,21 +1,29 @@
-#1 Problem form Code Chef 
-   Problem name : ATM
-   
-Problem : 
-  Pooja would like to withdraw X $US from an ATM. The cash machine will only accept the transaction if X is a multiple of 5, and Pooja's account balance has enough cash to perform the withdrawal transaction (including bank charges). For each successful withdrawal the bank charges 0.50 $US. Calculate Pooja's account balance after an attempted transaction.
+#1 Problem From Codesignal
+
+Problem Statement : Write a function that returns the sum of two numbers.
+
+Demo solutions :
+   1. add(10, 20)
+      answer = 30
+   2. add(304.45, 456.23)
+      answer = 760.68
+   ...Likewise...
 
 
-# Inputs
-  Positive integer 0 < X <= 2000 - the amount of cash which Pooja wishes to withdraw.
-  Nonnegative number 0<= Y <= 2000 with two digits of precision - Pooja's initial account balance.
+with the help of DEF(predefined in python) we are going to inplement this problem.
+There are lots of ways to solving this problem like:
+
+Code : 
+
+Method -1 : 
+USER-FRIENDLY : 
+   num1= int(input("first number: ")
+   num2 = int(input("second number: ")
+   sum = num1 + num2
+   print(sum)
    
-#Code : 
-   def transaction(amt, bal):
-    if amt>bal:
-        return "insuficient balance"
-    else:
-        if amt%5==0:
-            rem = bal-amt-.50
-            return rem
-        else:
-            return bal
+Method -2 :
+USER FRIENDLY
+  def add(param1, param2):                    #in this line we created a functuion called add
+    sum = param1 + param2                     #at this line we created a variable name sum which will store a sum of the given two numb
+    return sum                                #with the help of return we returning the result/sum of the given two numbers.
