@@ -1,0 +1,24 @@
+Problem Statement : 
+  Check the given string is palindrome or not, If palindrome then return True else False.
+  palindrome : alphabet from starting and from ending is same in string then it is called palindrome.
+
+Examples : 
+  For inputString = "aabaa", the output should be
+   checkPalindrome(inputString) = true;
+   
+  For inputString = "abac", the output should be
+  checkPalindrome(inputString) = false;
+  
+  For inputString = "a", the output should be
+  checkPalindrome(inputString) = true.
+  
+ Logic : 
+  simply turn your string from ending to starting and match your turned string with given string if they both are equal then it is Palindrome else NOT.
+  
+  
+Solution : 
+  def checkPalindrome(inputString):
+    if inputString==inputString[::-1]:             #This line will check your turned string and given string are same or not, (inputString[::-1] is turned your string from ending to satrting.).
+        return True
+    else:
+        return False
